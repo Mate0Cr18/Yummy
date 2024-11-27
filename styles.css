@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+header>a {
+    text-decoration: none;
+    color: #590209;
+    font-size: 20px;
+    background-color: #F8F6E9;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+nav>a {
+    text-decoration: none;
+    color: #590209;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #F8F6E9;
+}
+
+nav>a:nth-last-of-type(1) {
+    background-color: #590209;
+    color: white;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section:nth-of-type(1) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #590209;
+}
+
+section:nth-of-type(1)>article {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 45%;
+    margin: 10px 10px 10px 10px;
+}
+
+section:nth-of-type(1)>article:nth-of-type(2) {
+    background-color: #F8F6E9;
+}
+
+section:nth-of-type(1)>article>h2,
+section:nth-of-type(1)>article>h1 {
+    color: #590209;
+    font-size: 48px;
+    margin: 10px;
+}
+
+section:nth-of-type(1)>article>p {
+    color: #590209;
+    font-size: 20px;
+    margin: 10px;
+}
+
+section:nth-of-type(1)>article>a {
+    margin: 10px;
+    color: #590209;
+    border-color: #590209;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: solid;
+}
+section:nth-of-type(2){
+    color: #590209;
+
+}
+section:nth-of-type(2)>article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+section:nth-of-type(2)>article>h1 {
+    color: #590209;
+    font-size: 48px;
+    margin: 10px;
+}
+
+section:nth-of-type(2)>article>p {
+    color: #590209;
+    font-size: 20px;
+    margin: 10px;
+}
+
+section:nth-of-type(2)>article>a {
+    margin: 10px;
+    color: #590209;
+    border-color: #590209;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+    border-style: solid;
+}
