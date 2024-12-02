@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
     <title>Yummy</title>
     <link rel="shortcut icon" href="./yummy-resources/img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,23 +11,190 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", sans-serif;
+        }
+
+        header {
+            text-align: center;
+            top: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+        }
+
+        nav {
+            width: 65%;
+            display: flex;
+        }
+
+        nav>ul {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0;
+        }
+
+        header>a {
+            text-decoration: none;
+            color: #590209;
+            font-size: 20px;
+            background-color: #F8F6E9;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        ul>li>a {
+            text-decoration: none;
+            color: #590209;
+            font-size: 20px;
+            padding: 5px;
+            border-radius: 10px;
+            background-color: #F8F6E9;
+        }
+
+        nav>ul>li {
+            list-style-type: none;
+        }
+
+        ul>li:nth-last-of-type(1)>a {
+            text-decoration: none;
+            background-color: #590209;
+            color: white;
+            padding: 5px;
+            border-radius: 15px;
+        }
+
+        section:nth-of-type(1) {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: space-between;
+            color: #590209;
+            margin: 0;
+        }
+
+        section:nth-of-type(1)>article {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 50%;
+        }
+
+        section:nth-of-type(1)>article:nth-of-type(1)>img,
+        section:nth-of-type(1)>article:nth-of-type(4)>img {
+            width: 100%;
+            height: 100%;
+        }
+
+        section:nth-of-type(1)>article:nth-of-type(2) {
+            background-color: #F8F6E9;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        section:nth-of-type(1)>article:nth-of-type(3) {
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+
+        section:nth-of-type(1)>article>h2,
+        section:nth-of-type(1)>article>h1 {
+            color: #590209;
+            font-size: 48px;
+        }
+
+        section:nth-of-type(1)>article>p {
+            color: #590209;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        section:nth-of-type(1)>article>a {
+            margin: 10px;
+            color: #590209;
+            border-color: #590209;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px;
+            border-style: solid;
+        }
+
+        section:nth-of-type(2) {
+            color: #590209;
+        }
+
+        section:nth-of-type(2)>article {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        section:nth-of-type(2)>article>h1 {
+            color: #590209;
+            font-size: 48px;
+            margin: 10px;
+        }
+
+        section:nth-of-type(2)>article>p {
+            color: #590209;
+            font-size: 20px;
+            margin: 10px;
+        }
+
+        section:nth-of-type(2)>article>a {
+            margin: 10px;
+            color: #590209;
+            border-color: #590209;
+            text-decoration: none;
+            border-radius: 5px;
+            padding: 10px;
+            border-style: solid;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <a href=""><img src="./yummy-resources/img/favicon.ico" alt="" width="20px">Yummy</a>
         <nav>
-            <a href="">Who we are</a>
-            <a href="">What we offer</a>
-            <a href="">Partners</a>
-            <a href="">How to apply</a>
-            <a href="">Book a meeting</a>
+            <ul>
+                <li><a href="">Who we are</a></li>
+                <li><a href="">What we offer</a></li>
+                <li><a href="">Partners</a></li>
+                <li><a href="">How to apply</a></li>
+                <li><a href="">Book a meeting</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <section>
             <article>
-                <img src="./yummy-resources/img/apple-pie.jpg" alt="" width="450px">
+                <img src="./yummy-resources/img/apple-pie.jpg" alt="">
             </article>
             <article>
                 <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor ab deserunt autem.</h1>
@@ -51,15 +217,18 @@
         <section>
             <article>
                 <h2>What we offer</h2>
-                <p>Lorem ipsum dolor sit amet <strong>5</strong> consectetur adipisicing elit. Provident quod corrupti porro.
+                <p>Lorem ipsum dolor sit amet <strong>5</strong> consectetur adipisicing elit. Provident quod corrupti
+                    porro.
                     voluptatibus.</p>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Molestias</strong>, architecto unde neque sit odio
+                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. <strong>Molestias</strong>, architecto
+                    unde neque sit odio
                     repellendus.
                 </p>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates laborum cumque eum
                     ipsa id. <strong>Veritatis</strong> quae aliquid quibusdam illo. Similique!</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eveniet obcaecati recusandae ducimus</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eveniet obcaecati recusandae
+                    ducimus</p>
                 <a href="">Inquiry about special services</a>
             </article>
         </section>
