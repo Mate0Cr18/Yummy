@@ -16,6 +16,7 @@
             margin: 0;
             padding: 0;
             font-family: "Open Sans", sans-serif;
+            width: 100%;
         }
 
         header {
@@ -46,7 +47,7 @@
             font-size: 20px;
             background-color: #F8F6E9;
             padding: 5px;
-            border-radius: 15px;
+            border-radius: 10px;
         }
 
         ul>li>a {
@@ -65,16 +66,18 @@
         ul>li:nth-last-of-type(1)>a {
             text-decoration: none;
             background-color: #590209;
-            color: white;
+            color: #F8F6E9;
             padding: 5px;
-            border-radius: 15px;
+            border-radius: 10px;
         }
-
+        section:nth-of-type(2), section:nth-of-type(3), section:nth-of-type(4) {
+            padding: 10px 0px 10px 0px;
+        }
         section:nth-of-type(1) {
             display: flex;
             flex-wrap: wrap;
-            width: 100%;
-            margin: 0 auto;
+            height: 100%;
+            margin: 0;
             justify-content: space-between;
             color: #590209;
             margin: 0;
@@ -91,7 +94,7 @@
         section:nth-of-type(1)>article:nth-of-type(1)>img,
         section:nth-of-type(1)>article:nth-of-type(4)>img {
             width: 100%;
-            height: 100%;
+            height: 100vh;
         }
 
         section:nth-of-type(1)>article:nth-of-type(2) {
@@ -129,11 +132,16 @@
             border-style: solid;
         }
 
-        section:nth-of-type(2) {
+        section:nth-of-type(2), section:nth-of-type(4) {
             color: #590209;
         }
 
-        section:nth-of-type(2)>article {
+        section:nth-of-type(2), section:nth-of-type(3){
+            background-color: #F8F6E9;
+        }
+
+        section:nth-of-type(2)>article,
+        section:nth-of-type(4)>article {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -142,19 +150,22 @@
             margin: 0 auto;
         }
 
-        section:nth-of-type(2)>article>h1 {
+        section:nth-of-type(2)>article>h1,
+        section:nth-of-type(4)>article>h2 {
             color: #590209;
-            font-size: 48px;
+            font-size: 22px;
             margin: 10px;
         }
 
-        section:nth-of-type(2)>article>p {
+        section:nth-of-type(2)>article>p,
+        section:nth-of-type(4)>article>p {
             color: #590209;
             font-size: 20px;
             margin: 10px;
         }
 
-        section:nth-of-type(2)>article>a {
+        section:nth-of-type(2)>article>a,
+        section:nth-of-type(4)>article>a {
             margin: 10px;
             color: #590209;
             border-color: #590209;
@@ -162,6 +173,36 @@
             border-radius: 5px;
             padding: 10px;
             border-style: solid;
+        }
+        section:nth-of-type(3) {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            color: #590209;
+            margin: 0;
+        }
+        section:nth-of-type(3)>article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 30%;
+            margin: 0 ;
+        }
+        section:nth-of-type(3)>article>img {
+            display: flex;
+            width: 35%;
+            height: 35%;
+        }
+        section:nth-of-type(3)>article>p {
+            justify-self: start;
+            align-self: start;
+            color: #590209;
+            font-size: 20px;
+            padding: 10px;
+            margin: 0;
+            text-align: justify;
         }
 
         footer {
@@ -216,7 +257,7 @@
         </section>
         <section>
             <article>
-                <h2>What we offer</h2>
+                <h2>WHAT WE OFFER</h2>
                 <p>Lorem ipsum dolor sit amet <strong>5</strong> consectetur adipisicing elit. Provident quod corrupti
                     porro.
                     voluptatibus.</p>
@@ -230,6 +271,51 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates eveniet obcaecati recusandae
                     ducimus</p>
                 <a href="">Inquiry about special services</a>
+            </article>
+        </section>
+        <section>
+            <article>
+                <img src="./yummy-resources/img/team.svg" alt="">
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ex!</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing.</P>
+                <P>Lorem ipsum dolor sit.</P>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing.</P>
+            </article>
+            <article>
+                <img src="./yummy-resources/img/services.svg" alt="">
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error.</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, maiores?</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit.</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus?</P>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing.</P>
+                <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</P>
+                <P>Lorem ipsum dolor sit amet consectetur.</P>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit, quas.</p>
+            </article>
+            <article>
+                <img src="./yummy-resources/img/infrastructure.svg" alt="">
+                <P>Lorem ipsum dolor sit.</P>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <P>Lorem, ipsum.</P>
+                <P>Lorem ipsum dolor sit amet.</P>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, aut!</P>
+                <P></P>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>WHO DO WE PARTNER WITH?</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi voluptatibus alias maxime?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquam asperiores reiciendis ex
+                    nihil cum unde pariatur maxime consequatur voluptas!</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit ad distinctio expedita voluptas
+                    deserunt! Quidem.</p>
+                <a href="">Get to know us</a>
             </article>
         </section>
 
